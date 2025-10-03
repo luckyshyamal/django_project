@@ -21,4 +21,5 @@ from firstApp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('app/', firstapp),
+    path('htmlfile/',htmlfile),
 ]
