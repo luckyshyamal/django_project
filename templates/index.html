@@ -4,13 +4,20 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        {%  block css_link %}
         <link rel="stylesheet" href="{% static 'style.css' %}">
-        <title></title>
+        {% endblock %}
+        {%  block title_name %}
+        <title>hello world</title>
+        {% endblock %}
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
+        {%  block body_code %}
         <h1>Hello World</h1>
         <p>This is the git first practice program</p>
+
+        {% endblock %}
     </body> 
 </html>
