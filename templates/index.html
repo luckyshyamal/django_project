@@ -1,23 +1,97 @@
 <!DOCTYPE html>
 {% load static %}
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        {%  block css_link %}
-        <link rel="stylesheet" href="{% static 'style.css' %}">
-        {% endblock %}
-        {%  block title_name %}
-        <title>hello world</title>
-        {% endblock %}
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    </head>
-    <body>
-        {%  block body_code %}
-        <h1>Hello World</h1>
-        <p>This is the git first practice program</p>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    {% block css_link %}
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    {% endblock %} {% block title_name %}
+    <title>hello world</title>
+    {% endblock %}
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        {% endblock %}
-    </body> 
+    <!--Fontawesome CSS-->
+    <link rel="stylesheet" href="{% static 'icons/css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'icons/css/all.min.css' %}" />
+  </head>
+  <body>
+    <!--Tobbar-->
+    <section class="topbar">
+      <div class="topbar-contact">
+        <ul>
+          <li>
+            <a href="https://wa.link/gvql5d"
+              ><i class="fa-brands fa-whatsapp"></i
+            ></a>
+          </li>
+          <li>
+            <a href="tel:9124887068"
+              ><i class="fa-solid fa-mobile-screen-button"></i
+              ><span>9124887068</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto:boirishyamal2906@gmail.com"
+              ><i class="fa-solid fa-envelope"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="topbar-social">
+        <ul>
+          <li>
+            <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="" target="_blank"
+              ><i class="fa-brands fa-x-twitter"></i
+            ></a>
+          </li>
+        </ul>
+
+        <div class="topbar-btn">
+          <a href="">Batches</a>
+          <a href="">Enroll Now</a>
+        </div>
+      </div>
+    </section>
+
+    <!--header-->
+
+    <header>
+      <div class="logo-brand">
+        <img src="{% static 'images/logo.webp' %}" alt="" width="90px " />
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="">Categories</a></li>
+          <li><a href="">Courses</a></li>
+          <li><a href="">Become an Instructor</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    {% block body_code %}
+    <div class = "hero"> 
+        <h2>WELCOME TO DIGIT INSTITIUTE</h2>
+      <p>We provide always our best training for our learners and always try to achieve our learner's trust and
+        satisfaction.</p>
+    </div>
+    
+
+    {% endblock %}
+
+    <!--Fontawesome JavaScript -->
+    <script src="{% static 'icons/js/all.js' %}"></script>
+    <script src="{% static 'icons/js/all.min.js' %}"></script>
+  </body>
 </html>
