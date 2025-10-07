@@ -22,5 +22,6 @@ from firstApp.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('htmlfile/',htmlfile),
-    path('htmlfile2/', htmlfile2)
+    path('htmlfile2/', htmlfile2),
+    path('django_file/', django_file),
 ]

@@ -1,0 +1,29 @@
+{% load custom_filter %}
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+    <meta http-equiv = "X-UA-Compartible" content = "ie = edge">
+    <title>Django templates</title>
+</head>
+<body>
+    <h1> Welcome to Django filters project</h1>
+    <h2> Hello, {{ Name}} </h2>
+    <h2> name at uppercase is {{ Name|upper}}
+    <h2> Your age is {{ Age}} </h2>
+    <h2> You live in {{ City}} </h2>
+    <h3> number 
+        {% for i in numbers %}    
+            {{ i }}
+        {% endfor %}
+    </h3>
+
+    <h3> name at first three letter as uppercase is {{ Name|f3upper}}</h3>
+    <h3> Name in title case is {{ Name|f1upper}}</h3>
+    <h3> reverse name {{ Name|reverseall}}</h3>
+    <h3> count how many a letter d occurs {{ City|count_letter:'d'}}</h3>
+
+</body>
+</html>
